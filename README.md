@@ -5,7 +5,6 @@ Docker image for Elm Test.
 ## Requirements
 
 - Docker
-- Docker Compose (optional)
 
 ## Installation
 
