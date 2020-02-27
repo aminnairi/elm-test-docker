@@ -41,7 +41,7 @@ RUN npm config set prefix /home/elm/.local
 RUN npm install --global elm-test
 
 # Prefixing all command run with this image by the Elm Test binary path
-ENTRYPOINT [ "/home/elm/.local/bin/elm-test" ]
+ENTRYPOINT [ "/home/elm/.local/bin/elm-test", "--compiler", "/usr/local/bin/elm" ]
 
 # Default argument if none are provided when running this image
 CMD [ "--version" ]
